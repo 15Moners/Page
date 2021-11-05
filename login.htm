@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Homepage Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">   
+</head>
+    <body>
+    <div class="login-box">
+    <img src="avatar.png" class="avatar">
+
+        <script type="text/javascript">
+
+        var url_string = window.location.href;
+        var url = new URL(url_string);
+        var pass = url.searchParams.get("pass");
+
+        if (pass== 'bad'){
+           //do nothing its fine
+            document.write('<h1><font color="white">Username or Password Incorrect</font></h1>')
+        }
+
+
+        </script>
+        
+        <h1>Login</h1>
+            <form name=frmMain action=Search.htm method=GET>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Login">
+            </form>
+        
+        
+        </div>
+    
+    </body>
+</html>
